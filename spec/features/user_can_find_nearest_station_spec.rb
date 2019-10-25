@@ -1,5 +1,4 @@
 require 'rails_helper'
-# Then I should see the closest electric fuel station to me.
 #
 # For that station I should see
 # - Name
@@ -24,7 +23,8 @@ describe "user can select a location from the drop down,click find nearest stati
     # And I click "Find Nearest Station"
     click_on "Find Nearest Station"
     # Then I should be on page "/search"
-    expect_current_path.to eq(search_path)
+    expect(current_path).to eq(search_path)
+    # Then I should see the closest electric fuel station to me.
 
   end
 end
