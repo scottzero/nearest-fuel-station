@@ -1,6 +1,8 @@
 class SearchController < ApplicationController
   def index
-    @station = Station.new(params)
+    @poro = application_poro()
+    #method call from appcation controller
+    # binding.pry
   end
 
 end

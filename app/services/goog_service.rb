@@ -11,7 +11,7 @@ class GoogService
     end
   response = conn.get("directions/json?origin=1331+17th+Street+denver+CO&destination=1800+Larimer+Street+denver+CO&key=AIzaSyBWIgzxkg_oJ1p5wquKPaSTxEYLPAU8m9E")
   response_body = JSON.parse(response.body, symbolize_names: true)
-  binding.pry
+  # binding.pry
   #successfully hitting the api
   # 1800+Larimer+Street+denver+CO, elec fuel, got from post, need to make dynamic,
   end
