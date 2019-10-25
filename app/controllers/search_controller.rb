@@ -1,8 +1,5 @@
 class SearchController < ApplicationController
   def index
-    @poro = application_poro()
-    #method call from appcation controller
-    # binding.pry
+    @poro = application_poro() #lives in app con
   end
-
 end

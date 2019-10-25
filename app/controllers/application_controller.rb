@@ -8,9 +8,9 @@ class ApplicationController < ActionController::Base
     send_to_poro = nrel_obj.service(80202)#turing zip 80202
     poro = Station.new(send_to_poro)
   end
-  #user makes request from select turing
-  #need to
-  # test = GoogService.new
-  # test.service
-  #pingd the google api but didnt connect it properly, go back to refactor,didnt use
 end
+#user makes request from select turing
+#need to
+# test = GoogService.new
+# test.service
+#pingd the google api but didnt connect it properly, go back to refactor,didnt use
